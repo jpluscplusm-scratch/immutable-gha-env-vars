@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set FOO
-        run: echo "FOO=first" >> $GITHUB_ENV
+        run: echo "readonly FOO=first" >> $GITHUB_ENV
 
       - name: Override FOO
         run: echo "FOO=second" >> $GITHUB_ENV
